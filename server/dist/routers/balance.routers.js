@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const balance_controllers_1 = require("../controllers/balance.controllers");
+const rBalance = (0, express_1.Router)();
+rBalance.get('/', balance_controllers_1.getSaldo);
+rBalance.post('/topup', balance_controllers_1.topUp);
+rBalance.post('/withdraw', balance_controllers_1.withdraw);
+rBalance.post('/withdraw', balance_controllers_1.transfer);
+exports.default = rBalance;

@@ -4,7 +4,7 @@ import { getUsers, loginUser, signupUser,  } from "../controllers/users.controll
 
 const rUser = Router();
 
-rUser.post('/', getUsers)
+rUser.get('/', getUsers)
 rUser.post('/login', loginUser)
 rUser.post('/signup', signupUser)
 

@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const users_routers_1 = __importDefault(require("../routers/users.routers"));
 const home_routers_1 = __importDefault(require("../routers/home.routers"));
+const balance_routers_1 = __importDefault(require("../routers/balance.routers"));
 class Server {
     constructor() {
         this.app = (0, express_1.default)();
@@ -22,6 +23,7 @@ class Server {
     routes() {
         this.app.use('/api/home', home_routers_1.default);
         this.app.use('/api/users', users_routers_1.default);
+        this.app.use('/api/balance', balance_routers_1.default);
     }
     midlewares() {
         this.app.use(express_1.default.json());

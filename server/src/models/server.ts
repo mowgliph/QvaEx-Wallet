@@ -2,6 +2,8 @@
 import express from 'express';
 import rUser from '../routers/users.routers';
 import rHome from '../routers/home.routers';
+import rBalance from '../routers/balance.routers';
+
 
 class Server {
     private app: express.Application;
@@ -24,6 +26,7 @@ class Server {
     routes(){
         this.app.use('/api/home', rHome);
         this.app.use('/api/users', rUser);
+        this.app.use('/api/balance', rBalance);
     }
 
     midlewares(){
