@@ -1,0 +1,21 @@
+Configuracion de URLs
+1- localhost:PORT/api/home
+2- localhost:PORT/api/users
+    2.1- localhost:PORT/api/users/login
+    2.2- localhost:PORT/api/users/signup
+3- localhost:PORT/api/settings
+    3.1- localhost:PORT/api/settings/payment-method
+    3.2- localhost:PORT/api/settings/payment-links
+    3.3- localhost:PORT/api/settings/referal
+4- localhost:PORT/api/blog
+5- localhost:PORT/api/transactions
+    5.1- localhost:PORT/api/transactions/pay
+    5.2- localhost:PORT/api/transactions/charge
+    5.3- localhost:PORT/api/transactions/p2p
+    5.4- localhost:PORT/api/transactions/history
+6- localhost:PORT/api/finanzas
+    6.1- localhost:PORT/api/finanzas/topup
+    6.2- localhost:PORT/api/finanzas/withdraw
+    6.3- localhost:PORT/api/finanzas/transfer
+7- localhost:PORT/api/terms-service
+8- localhost:PORT/api/privacy-policy
