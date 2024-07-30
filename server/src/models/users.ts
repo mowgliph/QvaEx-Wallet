@@ -10,31 +10,31 @@ export const Users = sequelize.define('users', {
     },
     username: {
         type: DataTypes.STRING,
-        defaultValue: 'elonmosk'
+        unique: true,
+        allowNull: false
     },
     password: {
         type: DataTypes.STRING,
+        allowNull: false
+
     },
     name: {
-        type: DataTypes.STRING,
-        defaultValue: 'Elon'
+        type: DataTypes.STRING
+
     },
     lastname: {
-        type: DataTypes.STRING,
-        defaultValue: 'Elon Mosk'
+        type: DataTypes.STRING
+
     },
     email: {
-        type: DataTypes.TEXT,
-        defaultValue: 'elonmosk@hotmail.com'
+        type: DataTypes.STRING
+
     },
-    checkemail: {
-        type: DataTypes.TEXT,
-    },
-    celular: {
-        type: DataTypes.INTEGER,
+    numTele: {
+        type: DataTypes.INTEGER
+
     },
     biografia: {
-        type: DataTypes.TEXT,
-        defaultValue: 'Multi Billonario'
+        type: DataTypes.TEXT
     }
 }) 

@@ -14,31 +14,26 @@ exports.Users = connect_1.default.define('users', {
     },
     username: {
         type: sequelize_1.DataTypes.STRING,
-        defaultValue: 'elonmosk'
+        unique: true,
+        allowNull: false
     },
     password: {
         type: sequelize_1.DataTypes.STRING,
+        allowNull: false
     },
     name: {
-        type: sequelize_1.DataTypes.STRING,
-        defaultValue: 'Elon'
+        type: sequelize_1.DataTypes.STRING
     },
     lastname: {
-        type: sequelize_1.DataTypes.STRING,
-        defaultValue: 'Elon Mosk'
+        type: sequelize_1.DataTypes.STRING
     },
     email: {
-        type: sequelize_1.DataTypes.TEXT,
-        defaultValue: 'elonmosk@hotmail.com'
+        type: sequelize_1.DataTypes.STRING
     },
-    checkemail: {
-        type: sequelize_1.DataTypes.TEXT,
-    },
-    celular: {
-        type: sequelize_1.DataTypes.INTEGER,
+    numTele: {
+        type: sequelize_1.DataTypes.INTEGER
     },
     biografia: {
-        type: sequelize_1.DataTypes.TEXT,
-        defaultValue: 'Multi Billonario'
+        type: sequelize_1.DataTypes.TEXT
     }
 });

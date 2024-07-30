@@ -51,7 +51,6 @@ class Server {
                 alter: true
             });
             
-
         } catch (error){
             console.error('No se puede conectar con la base de datos:', error);
         }
